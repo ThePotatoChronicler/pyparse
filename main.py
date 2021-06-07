@@ -106,11 +106,11 @@ class MathFunc(MathValue):
     not wrapped in MathObject or MathValue. As such is the
     behaviour of the default parser and compiler.
     """
-    mi = 1
-    ma = 1
 
-    def __init__(self, *args):
+    def __init__(self, mi : int = 1, ma : int = 1, *args):
         self.args = args
+        self.mi = mi
+        self.ma = ma
 
 class CommonOps:
     """
